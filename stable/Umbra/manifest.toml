@@ -1,24 +1,13 @@
 [plugin]
 repository = "https://github.com/una-xiv/umbra.git"
-commit = "741d030764eb43f4f7a853169be93a50fa477163"
+commit = "17c9ac62a4de056120f651ce80d745595e252974"
 owners = ["haroldiedema"]
 project_path = "Umbra"
 changelog = """
-# Umbra 2.2.2
+# Umbra 2.2.3.1 (Hotfix)
 
-## Behavioral changes
-
-- The "Enabled" state of World Markers is now `Disabled` by default. This means that newly added world marker types aren't suddenly enabled automatically anymore. If you find world markers suddenly missing, please re-enable them either from the settings window or the world markers control widget.
-
-## New Additions
-
-- Added a minimize/restore button to Umbra Windows.
-
-## Fixes & Improvements
-
-- Fixed the French translation for "Retainer".
-- Fixed a crash that may occur when switching zones due to the Aether Current world marker factory trying to read from protected memory.
-
+Reverted the dynamic cursor change when hovering over interactive elements. Apparently the game plays a clicky sound
+effect when the mouse cursor changes. I had no idea it did this. Apologies for the inconvenience!
 
 Visit the Umbra Discord server for the latest updates and information: https://discord.gg/xaEnsuAhmm
 """
